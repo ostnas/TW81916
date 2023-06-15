@@ -44,7 +44,7 @@ object Build : BuildType({
 
     steps {
         script {
-            scriptContent = "ls"
+            scriptContent = "pwd"
         }
     }
 
@@ -64,8 +64,4 @@ object HttpsGithubComOstnasAnyRefsHeadsMain : GitVcsRoot({
     url = "https://github.com/ostnas/any"
     branch = "refs/heads/main"
     branchSpec = "refs/heads/*"
-    authMethod = password {
-        userName = "ostnas95@gmail.com"
-        password = "credentialsJSON:562cdc86-174d-495e-a63f-e282d6b33aae"
-    }
 })
